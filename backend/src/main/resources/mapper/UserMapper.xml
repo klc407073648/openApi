@@ -8,6 +8,8 @@
         <id property="id" column="id" jdbcType="BIGINT"/>
         <result property="userName" column="userName" jdbcType="VARCHAR"/>
         <result property="userAccount" column="userAccount" jdbcType="VARCHAR"/>
+        <result property="accessKey" column="accessKey" jdbcType="VARCHAR"/>
+        <result property="secretKey" column="secretKey" jdbcType="VARCHAR"/>
         <result property="userAvatar" column="userAvatar" jdbcType="VARCHAR"/>
         <result property="gender" column="gender" jdbcType="TINYINT"/>
         <result property="userRole" column="userRole" jdbcType="VARCHAR"/>
@@ -18,7 +20,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,userName,userAccount,
+        id,userName,userAccount,accessKey,secretKey
         userAvatar,gender,userRole,
         userPassword,createTime,updateTime,
         isDelete
