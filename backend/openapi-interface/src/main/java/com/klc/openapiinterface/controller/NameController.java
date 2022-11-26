@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
-@RequestMapping("/name")
+@RequestMapping("/")
 public class NameController {
 
-    @GetMapping("/")
-    public String getNameByGet(String name) {
+    @GetMapping("/name")
+    public String getNameByGet(String name, HttpServletRequest request) {
+        System.out.println(request.getHeader("test"));
         return "GET 你的名字是" + name;
     }
 
