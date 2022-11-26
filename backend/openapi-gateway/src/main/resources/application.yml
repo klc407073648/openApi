@@ -1,0 +1,85 @@
+server:
+  port: 8090
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        ## 根据时间的断言
+#        - id: before_route
+#          uri: https://baidu.com
+#          predicates:
+#            - Before=2017-01-20T17:42:47.789-07:00[America/Denver]
+#        - id: after_route
+#          uri: https://www.csdn.net
+#          predicates:
+#            - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+#        - id: between_route
+#          uri: https://cn.bing.com
+#          predicates:
+#            - Between=2017-01-20T17:42:47.789-07:00[America/Denver], 2032-01-21T17:42:47.789-07:00[America/Denver]
+        ## http://localhost:8090/?green
+#        - id: query_route
+#          uri: https://example.org
+#          predicates:
+#            - Query=green
+        ## 访问权值设置
+#        - id: weight_high
+#          uri: https://baidu.com
+#          predicates:
+#            - Weight=group1, 6
+#        - id: weight_low
+#          uri: https://www.bilibili.com
+#          predicates:
+#            - Weight=group1, 4
+        ## 添加请求头和请求参数，访问地址 http://localhost:8090/api/name
+#        - id: add_request_route
+#          uri: http://localhost:8123
+#          predicates:
+#            - Path=/api/**
+#          filters:
+#            - AddRequestHeader=test,hello
+#            - AddRequestParameter=name,kkk
+        ## 添加响应头和移除重复的value，访问地址 http://localhost:8090/api/name
+#        - id: add_response_route
+#          uri: http://localhost:8123
+#          predicates:
+#            - Path=/api/**
+#          filters:
+#            - AddResponseHeader=X-Response-Red, Blue
+#            - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+        # 添加前缀，http://localhost:8090/name 访问地址转成 http://localhost:8090/api/name
+#        - id: prefixpath_route
+#          uri: http://localhost:8123
+#          predicates:
+#            - Path=/name
+#          filters:
+#            - PrefixPath=/api
+        # 设置状态码和重定向地址
+#        - id: redirectpath_route
+#          uri: https://example.org
+#          predicates:
+#            - Method=GET,POST
+#          filters:
+#            - RedirectTo=302, http://localhost:8123/api/name/
+        # 移除请求头和响应头里的内容
+#        - id: removerequestheader_route
+#          uri: https://example.org
+#          predicates:
+#            - Method=GET,POST
+#          filters:
+#            - RemoveRequestHeader=User-Agent
+#            - RemoveResponseHeader=Server
+        # 设置状态码
+        - id: setstatusint_route
+          uri: https://example.org
+          predicates:
+            - Method=GET,POST
+          filters:
+            - SetStatus=401
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
