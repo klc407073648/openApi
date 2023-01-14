@@ -4,9 +4,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.klc.openapi.common.ErrorCode;
 import com.klc.openapi.exception.BusinessException;
 import com.klc.openapi.mapper.InterfaceInfoMapper;
-import com.klc.openapi.model.entity.InterfaceInfo;
 import com.klc.openapi.service.InterfaceInfoService;
-import org.apache.commons.lang3.ObjectUtils;
+import com.klc.openapicommon.model.entity.InterfaceInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 

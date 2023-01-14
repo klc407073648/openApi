@@ -2,7 +2,6 @@ package com.klc.openapi.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.klc.openapi.model.entity.Post;
-import com.klc.openapi.model.entity.InterfaceInfo;
 
 /**
 * @author yupili

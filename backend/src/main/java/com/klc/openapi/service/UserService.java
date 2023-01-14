@@ -2,8 +2,7 @@ package com.klc.openapi.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.klc.openapi.model.entity.User;
-
+import com.klc.openapicommon.model.entity.User;
 import javax.servlet.http.HttpServletRequest;
 
 /**

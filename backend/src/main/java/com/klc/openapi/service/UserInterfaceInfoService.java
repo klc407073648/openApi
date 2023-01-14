@@ -1,7 +1,8 @@
 package com.klc.openapi.service;
 
-import com.klc.openapi.model.entity.UserInterfaceInfo;
+
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.klc.openapicommon.model.entity.UserInterfaceInfo;
 
 /**
 * @author Jason

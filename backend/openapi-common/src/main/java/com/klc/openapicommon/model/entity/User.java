@@ -1,4 +1,4 @@
-package com.klc.openapi.model.entity;
+package com.klc.openapicommon.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;

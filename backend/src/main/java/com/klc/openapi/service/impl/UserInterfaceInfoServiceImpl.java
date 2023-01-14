@@ -4,19 +4,19 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.klc.openapi.common.ErrorCode;
 import com.klc.openapi.exception.BusinessException;
-import com.klc.openapi.model.entity.UserInterfaceInfo;
-import com.klc.openapi.service.UserInterfaceInfoService;
 import com.klc.openapi.mapper.UserInterfaceInfoMapper;
+import com.klc.openapi.service.UserInterfaceInfoService;
+import com.klc.openapicommon.model.entity.UserInterfaceInfo;
 import org.springframework.stereotype.Service;
 
 /**
-* @author Jason
-* @description 针对表【user_interface_info(用户调用接口关系)】的数据库操作Service实现
-* @createDate 2022-12-13 05:58:42
-*/
+ * @author Jason
+ * @description 针对表【user_interface_info(用户调用接口关系)】的数据库操作Service实现
+ * @createDate 2022-12-13 05:58:42
+ */
 @Service
 public class UserInterfaceInfoServiceImpl extends ServiceImpl<UserInterfaceInfoMapper, UserInterfaceInfo>
-    implements UserInterfaceInfoService{
+        implements UserInterfaceInfoService {
 
     @Override
     public void validUserInterfaceInfo(UserInterfaceInfo userInterfaceInfo, boolean add) {

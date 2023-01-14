@@ -1,4 +1,4 @@
-package com.klc.openapi.model.entity;
+package com.klc.openapicommon.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
@@ -36,7 +36,9 @@ public class InterfaceInfo implements Serializable {
 
     /**
      * 请求参数
-     *    {"name": "username", "type": "string"}
+     * [
+     *   {"name": "username", "type": "string"}
+     * ]
      */
     private String requestParams;
 
