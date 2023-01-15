@@ -1,4 +1,4 @@
-package com.klc.openapi.provider;
+package com.klc.openapicommon.service;
 
 import java.util.concurrent.CompletableFuture;
 

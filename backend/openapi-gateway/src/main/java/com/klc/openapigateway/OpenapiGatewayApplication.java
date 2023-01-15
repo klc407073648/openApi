@@ -1,6 +1,6 @@
 package com.klc.openapigateway;
 
-import com.klc.openapi.provider.DemoService;
+import com.klc.openapicommon.service.DemoService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;

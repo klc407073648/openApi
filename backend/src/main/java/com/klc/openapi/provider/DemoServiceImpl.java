@@ -1,5 +1,6 @@
 package com.klc.openapi.provider;
 
+import com.klc.openapicommon.service.DemoService;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.apache.dubbo.rpc.RpcContext;
 
