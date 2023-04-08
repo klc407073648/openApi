@@ -1,6 +1,6 @@
 package com.klc.openapi.service;
 
-import com.klc.openapi.model.entity.User;
+import com.klc.openapicommon.model.entity.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
