@@ -25,7 +25,8 @@ interface ResponseStructure {
  * @doc https://umijs.org/docs/max/request#配置
  */
 export const requestConfig: RequestConfig = {
-  baseURL: 'http://localhost:7529',
+  //baseURL: 'http://localhost:7529',
+  baseURL: 'http://$OPENAPI_BACKEND_IP:$OPENAPI_BACKEND_PORT',
   withCredentials:true,
   // 错误处理： umi@3 的错误处理方案。
 
