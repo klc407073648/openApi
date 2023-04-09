@@ -48,3 +48,7 @@ dubbo:
   registry:
     id: nacos-registry
     address: nacos://$NACOS_IP:$NACOS_PORT
+  metadata-report:
+    address: nacos://$NACOS_IP:$NACOS_PORT
+    username: $NACOS_USER
+    password: $NACOS_PASSWORD
